@@ -1,0 +1,48 @@
+.note-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+  padding: 1rem;
+  transition: box-shadow 0.2s;
+}
+.note-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+.note-content {
+  color: #4B5563;
+  margin-top: 0.5rem;
+}
+.note-delete {
+  margin-top: 0.75rem;
+  background-color: #ef4444;
+  color: #fff;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+.note-delete:hover {
+  background-color: #dc2626;
+}
+
+.note-content {
+  color: #4B5563;
+  margin-top: 0.5rem;
+}
+
+.note-delete {
+  margin-top: 0.75rem;
+  background-color: #ef4444;
+  color: #fff;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+.note-delete:hover {
+  background-color: #dc2626;
+}
