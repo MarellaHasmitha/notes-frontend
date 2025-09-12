@@ -1,0 +1,99 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: white; /* neutral background */
+  color: #111827; /* dark text */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #16a34a; /* green accent */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  color: #15803d; /* darker green on hover */
+}
+
+/* Links container */
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Links */
+.navbar-links a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Underline animation on hover */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #16a34a;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: #16a34a;
+  transform: translateY(-2px);
+}
+
+/* Logout button */
+.btn-red {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-links {
+    gap: 0.5rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+}

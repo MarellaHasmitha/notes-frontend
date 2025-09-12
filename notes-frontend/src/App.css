@@ -1,0 +1,32 @@
+/* src/App.css */
+body, html, #root, .app-container {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
