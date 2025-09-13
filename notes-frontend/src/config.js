@@ -2,7 +2,7 @@
 
 // ✅ Backend URLs for different environments
 const DEV_BACKEND_URL = "http://localhost:8080/api"; // Local backend
-const PROD_BACKEND_URL = "https://notes-backendapp.onrender.com/";
+const PROD_BACKEND_URL = "https://notes-backendapp.onrender.com/api";
  // Deployed backend
 
 // ✅ Determine which backend to use based on environment
