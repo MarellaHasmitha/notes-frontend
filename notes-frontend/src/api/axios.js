@@ -1,12 +1,15 @@
-// src/api/axios.js
 import axios from "axios";
 import { BACKEND_URL } from "../config";
 
+console.log("🔗 Using backend:", BACKEND_URL); // Debug
+
 const API = axios.create({
-  baseURL: BACKEND_URL,
+  baseURL: BACKEND_URL.endsWith("/") ? BACKEND_URL : `${BACKEND_URL}/`,
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
-// ✅ Automatically attach token to every request
 API.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
@@ -15,9 +18,7 @@ API.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 export default API;
