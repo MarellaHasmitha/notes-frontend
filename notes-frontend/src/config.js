@@ -2,7 +2,8 @@
 
 // ✅ Backend URLs for different environments
 const DEV_BACKEND_URL = "http://localhost:8080/api"; // Local backend
-const PROD_BACKEND_URL = "https://notes-fullstack-2zts.onrender.com/api"; // Deployed backend
+const PROD_BACKEND_URL = "https://notes-backendapp.onrender.com/";
+ // Deployed backend
 
 // ✅ Determine which backend to use based on environment
 export const BACKEND_URL =
